@@ -22,5 +22,5 @@ router.get("/",function(req,res){
     res.render("auth",{pTitle:"Authors",nav:[{link:"/book",title:"Book"},{link:"/auth",title:"Author"}],auth:auth_arr});
 })
 router.get("/sa/:id",function(req,res){
-    res.render("authdesc",{pTitle:"Books",nav:[{link:"/book",title:"Book"},{link:"/auth",title:"Author"}],auth:auth_arr[req.params.id]});
+    res.render("authdesc",{pTitle:"Author",nav:[{link:"/book",title:"Book"},{link:"/auth",title:"Author"}],auth:auth_arr[req.params.id]});
 })
